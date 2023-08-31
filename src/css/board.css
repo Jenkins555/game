@@ -1,0 +1,18 @@
+/* Board.css */
+.board {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .button {
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* Уменьшили отступы между картами */
+  }
+  
+  /* Add any other styles you'd like */
+  

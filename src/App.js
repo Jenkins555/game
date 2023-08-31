@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import Board from './component/Board';
+import Deck from './component/Deck';
 import './App.css';
 
-function App() {
+const App = () => {
+  const monsterDeck = [
+    { title: "Монстр 1", description: "Описание монстра 1" },
+    { title: "Монстр 2", description: "Описание монстра 2" },
+    { title: "Монстр 3", description: "Описание монстра 3" },
+    { title: "Монстр 4", description: "Описание монстра 4" },
+    { title: "Монстр 5", description: "Описание монстра 5" },
+    // ... Другие карты монстров
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Настольная игра</h1>
+      <Board />
+      <Deck name="Колода монстров" cards={monsterDeck} backImage="path/to/monsterBack.jpg" />
+      {/* Создайте и отобразите другие колоды с разными картами и рубашками */}
+   
     </div>
   );
-}
+};
 
 export default App;
