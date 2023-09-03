@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/player.css';
+import '../css/player.css'
 
 const Player = ({ playerNumber, onPlayerCreated }) => {
   // Состояния для хранения данных об игроке
